@@ -3,13 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>ICT12367 SPU</h1>")
+    return render(request,"index.html")
 
 def about(request):
-    return HttpResponse("<h1>เกี่ยวกับเรา</h1>")
+    return render(request,"about.html")
 
 def form(request):
     return render(request,'form.html')
-
-def contact(request):
-    return HttpResponse("<h1>ติดต่อ 68121337 Thanaphat Phanngam</h1>")
