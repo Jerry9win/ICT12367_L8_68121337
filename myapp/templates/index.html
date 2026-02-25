@@ -1,11 +1,50 @@
-{% extends "base.html"%}
-
-{% block title %}
-<title>หน้าแรกของเว็บไซต์</title>
-{% endblock %}
+{% extends "base.html" %}
 
 {% block content %}
-    <h1>ICT12367 SPU</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Eligendi debitis, aliquam ut alias necessitatibus id mollitia quia perspiciatis nobis nostrum.</p>
+<div class="container mt-5">
+    <h2 class="text-center mb-4 fw-bold text-primary">Characters / ตัวละครหลัก</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://static.wikia.nocookie.net/rezero/images/7/7c/Emilia_S3_anime_PV2_1st.png/revision/latest/scale-to-width-down/1000?cb=20240324181945" class="card-img-top object-fit-cover" style="height: 250px;" alt="Emilia">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Emilia (เอมิเลีย)</h5>
+                    <p class="card-text text-muted">ครึ่งเอลฟ์ผู้มีผมสีเงิน เป็นหนึ่งในผู้สมัครคัดเลือกกษัตริย์แห่งอาณาจักรลุกนิก้า...</p>
+                    <a href="https://rezero.fandom.com/wiki/Emilia" class="btn btn-outline-primary btn-sm" target="_Blank">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="https://static.wikia.nocookie.net/rezero/images/c/cf/Episode_56_Subaru.png/revision/latest/scale-to-width-down/1000?cb=20250410075333" class="card-img-top object-fit-cover" style="height: 250px;" alt="Subaru">
+                <div class="card-body text-dark">
+                    <h5 class="card-title fw-bold">Natsuki Subaru (นัตสึกิ ซูบารุ)</h5>
+                    <p class="card-text text-muted">ชายหนุ่มที่ถูกอัญเชิญมายังต่างโลกโดยมีความสามารถในการ "Return by Death"...</p>
+                    <a href="https://rezero.fandom.com/wiki/Natsuki_Subaru" class="btn btn-outline-primary btn-sm " target="_Blank">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="mt-5 p-5 bg-white rounded-4 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="fw-bold text-dark">เกี่ยวกับ Re:Zero</h3>
+                <p class="lead text-muted">เริ่มต้นชีวิตใหม่ในต่างโลกกับพลังที่ต้องแลกมาด้วยความเจ็บปวด</p>
+                <p>เนื้อเรื่องแนวแฟนตาซี ดราม่า ที่ครองใจแฟนๆ ทั่วโลกด้วยพล็อตเรื่องที่คาดเดาไม่ได้...</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="ratio ratio-16x9">
+                    <iframe 
+                        src="https://www.youtube.com/embed/65BiDF9YdGg" 
+                        title="Re:Zero Official Trailer"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
